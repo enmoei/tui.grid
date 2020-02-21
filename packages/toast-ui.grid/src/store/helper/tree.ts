@@ -1,10 +1,10 @@
-import { OptRow } from 'src/types';
-import { ColumnDefaultValues, Row, RowKey, Dictionary, ColumnInfo } from '../types';
-import { isUndefined } from 'util';
+import { OptRow, Dictionary } from '../../../types/options';
+import { Row, RowKey, ColumnDefaultValues } from '../../../types/store/data';
+import { ColumnInfo } from '../../../types/store/column';
 import { createRawRow } from '../data';
 import { isExpanded, getDepth, isLeaf, isHidden } from '../../query/tree';
 import { observable, observe } from '../../helper/observable';
-import { includes } from '../../helper/common';
+import { includes, isUndefined } from '../../helper/common';
 import { TREE_INDENT_WIDTH } from '../../helper/constant';
 
 interface TreeDataOption {

@@ -1,5 +1,5 @@
-import { CellEditor, CellEditorProps } from './types';
-import { CellValue } from '../store/types';
+import { CellEditor, CellEditorProps } from '../../types/editor/editor';
+import { CellValue } from '../../types/store/data';
 import { getListItems } from '../helper/editor';
 
 export class SelectEditor implements CellEditor {
